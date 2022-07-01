@@ -5,6 +5,10 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+
+  /* My solution */
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -16,6 +20,9 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+
+  /* My solution */
+  padding: 8px 16px;
 }
 
 input {
@@ -24,4 +31,40 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+  /* My solution */
+.header, .footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  border: 2px solid black;
+}
+
+  /* My solution */
+.footer {
+  background: #eee;
+}
+
+  /* My solution */
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 16px;
+}
+
+  /* My solution */
+.content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+  /* My solution */
+a {
+  text-decoration: none;
 }
